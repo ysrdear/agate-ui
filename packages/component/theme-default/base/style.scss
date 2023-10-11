@@ -1,0 +1,91 @@
+@import './var.scss';
+
+body {
+    box-sizing: border-box;
+    line-height: 1.2;
+    font-size: $font-size__base;
+    color: $color__base;
+}
+
+a {
+    cursor: pointer;
+    color: $color__blue;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+//文字部分
+.font-level1 {
+    color: $color__light;
+}
+
+.font-level2 {
+    color: $color__lighter;
+}
+
+.font-level3 {
+    color: $color__lightest;
+}
+
+.font-size-small {
+    font-size: $font-size__small;
+}
+
+.font-title-small {
+    font-size: $font-size__medium;
+}
+
+.font-title-medium {
+    font-size: $font-size__large;
+}
+
+.font-title-large {
+    font-size: $font-size__larger;
+    font-weight: bold;
+}
+
+//
+
+.font-blue {
+    color: $color__blue;
+}
+
+.font-red {
+    color: $color__red;
+}
+
+.font-green {
+    color: $color__green;
+}
+
+.font-yellow {
+    color: $color__yellow;
+}
+
+.ag-border {
+    border: 1px solid $color__border;
+}
+
+.ag-shadow {
+    box-shadow: 0 0 5px 0 $color__shadow;
+}
+
+//scroll
+.ag-scrollbar {
+    //
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba($color__lighter, 0.3);
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background-color: rgba($color__lighter, 0.5);
+        }
+    }
+}
