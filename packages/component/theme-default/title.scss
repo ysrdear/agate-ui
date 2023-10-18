@@ -1,0 +1,75 @@
+.ag-title {
+    position: relative;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+
+    .title-label {
+        position: absolute;
+        padding-left: 10px;
+        display: flex;
+        line-height: 40px;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+
+        .title-toggle {
+            margin-left: -10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+
+            &:hover {
+                color: #ffaa00;
+            }
+
+            &.is-toggle {
+                i {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        .title-text {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .title-center {
+        text-align: center;
+    }
+
+    .title-expand {
+        position: absolute;
+        right: 10px;
+    }
+
+    &.ag-level1 {
+        .title-label {
+            .title-text {
+                &:before {
+                    content: '';
+                    width: 8px;
+                    height: 24px;
+                    background: #409eff;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    &.ag-level2 {
+    }
+
+    &.ag-level3 {
+        border-bottom: 1px solid #409eff;
+
+        .title-label {
+            padding: 0 20px;
+            bottom: 0;
+            border-bottom: 4px solid #409eff;
+        }
+    }
+}

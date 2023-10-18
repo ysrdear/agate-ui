@@ -5,8 +5,6 @@ var component = process.argv.slice(2)
 const cwd = process.cwd()
 const templatePath = path.resolve(cwd, 'index.html')
 
-console.log(process.argv)
-
 if (!component[0]) {
     console.error('未输入组件名')
     return

@@ -1,14 +1,11 @@
 {
-    "name": "agate",
+    "name": "agate-ui",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "files": [
         "dist"
     ],
-    "config": {
-        "component": "value"
-    },
     "scripts": {
         "new": "node ./bin/newComponent.js",
         "dev": "node ./bin/updateComponent.js",
@@ -22,7 +19,8 @@
         ".": {
             "import": "./dist/agate.mjs",
             "require": "./dist/agate.umd.js"
-        }
+        },
+        "./lib/style.css": "./dist/style.css"
     },
     "keywords": [],
     "author": "",

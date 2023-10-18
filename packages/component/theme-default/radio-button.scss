@@ -1,0 +1,44 @@
+.ag-radio-button {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+    line-height: 24px;
+    color: #606266;
+
+    .radio-label {
+        white-space: nowrap;
+        text-align: right;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .radio-wrap {
+        flex: 1;
+        min-width: 0;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: baseline;
+        .radio-button {
+            padding: 0 10px;
+            cursor: pointer;
+            border-radius: 3px;
+            margin-bottom: 5px;
+
+            &:hover {
+                color: #409eff;
+            }
+
+            &.is-current {
+                background: #409eff;
+                color: #fff;
+            }
+        }
+
+        .radio-inner {
+            flex: 1;
+            min-width: 0;
+            flex-wrap: wrap;
+            display: flex;
+        }
+    }
+}

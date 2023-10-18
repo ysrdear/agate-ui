@@ -1,7 +1,6 @@
-import AgButton from './button/index.js'
-import AgForm from './form/index.js'
-import AgTag from './tag/index.js'
+import AgHeader from './header/index.js'
+import AgTitle from './title/index.js'
+import AgRadioButton from './radio-button/index.js'
+export default [AgHeader, AgTitle, AgRadioButton]
 
-export default [AgButton, AgForm, AgTag]
-
-export { AgButton, AgForm, AgTag }
+export { AgHeader, AgTitle, AgRadioButton }

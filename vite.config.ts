@@ -2,12 +2,6 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import path from 'path'
-// import Markdown from "vite-plugin-md"; // vue中使用md
-// // 提取ts文件
-// import dts from "vite-plugin-dts";
-//
-// import VitePluginMetaEnv from "vite-plugin-meta-env";
 
 const fileName = 'agate'
 
@@ -34,15 +28,6 @@ export default () => {
                 }
             }
         },
-        plugins: [
-            vue({ include: [/\.vue$/, /\.md$/] }),
-            vueJsx()
-
-            // Markdown(),
-            // dts(),
-            // // 环境变量
-            // VitePluginMetaEnv(metaEnv, "import.meta.env"),
-            // VitePluginMetaEnv(metaEnv, "process.env"),
-        ]
+        plugins: [vue({ include: [/\.vue$/, /\.md$/] }), vueJsx()]
     })
 }
