@@ -17,7 +17,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import AgateUI from 'agate-ui'
-import 'agate-ui/lib/style.css'
+import 'agate-ui/dist/style.css'
 
 const app = createApp(App)
 
@@ -32,7 +32,7 @@ app.use(AgateUI).mount('#app')
 import { createApp } from 'vue'
 import App from './App.vue'
 import { AgHeader } from 'agate-ui'
-
+import 'agate-ui/dist/style.css'
 const app = createApp(App)
 
 app.use(AgHeader).mount('#app')

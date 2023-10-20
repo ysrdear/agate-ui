@@ -4,10 +4,10 @@
             <i :class="[logo, 'logo-icon']" v-if="logo"></i>
             <div class="logo-text">{{ text }}</div>
         </div>
-        <div class="header-center">
+        <div class="header-center" v-if="$slots.center">
             <slot name="center"></slot>
         </div>
-        <div class="header-expand">
+        <div class="header-expand" v-if="$slots.expand">
             <slot name="expand"></slot>
         </div>
     </div>

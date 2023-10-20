@@ -6,10 +6,10 @@
             </span>
             <span class="title-text">{{ text }}</span>
         </div>
-        <div class="title-tip">
+        <div class="title-tip" v-if="$slots.tip">
             <slot name="tip"></slot>
         </div>
-        <div class="title-expand">
+        <div class="title-expand" v-if="$slots.expand">
             <slot name="expand"></slot>
         </div>
     </div>

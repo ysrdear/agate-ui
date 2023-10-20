@@ -16,6 +16,15 @@ a {
     }
 }
 
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
 //文字部分
 .font-level1 {
     color: $color__light;
